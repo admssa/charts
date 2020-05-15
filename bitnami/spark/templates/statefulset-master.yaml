@@ -154,7 +154,7 @@ spec:
         - name: config
           configMap:
             name: {{ .Values.master.configurationConfigMap }}
-            defaultMode: 664
+            defaultMode: 0664
         {{- end }}
         {{- if .Values.security.certificatesSecretName }}
         - name: certs
