@@ -21,7 +21,7 @@ spec:
           - path: {{ default "/" .path }}
             backend:
               serviceName: {{ include "spark.master.service.name" $ }}
-              servicePort: http
+              servicePort: {{ .port }}
     {{- end }}
   {{- if .Values.ingress.tls }}
   tls:
