@@ -43,6 +43,8 @@ spec:
               protocol: TCP
             - name: cluster
               containerPort: {{ .Values.master.clusterPort }}
+            - name: rest
+              containerPort: {{ .Values.master.restPort }}
           volumeMounts:
             {{- if .Values.master.configurationConfigMap }}
             - name: config

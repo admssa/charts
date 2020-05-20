@@ -48,6 +48,7 @@ master:
   ##
   webPort: 8080
   clusterPort: 7077
+  restPort: 6066
 
   ## Set the master daemon memory limit.
   ##
