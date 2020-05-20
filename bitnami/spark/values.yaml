@@ -294,12 +294,15 @@ service:
   ##
   webPort: 80
 
+  restPort: 6066
+
   ## Specify the nodePort(s) value(s) for the LoadBalancer and NodePort service types.
   ## ref: https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport
   ##
   nodePorts:
     cluster: ""
     web: ""
+    rest: ""
 
   ## Set the LoadBalancer service type to internal only.
   ## ref: https://kubernetes.io/docs/concepts/services-networking/service/#internal-load-balancer
